@@ -1,0 +1,128 @@
+<style>
+  .slide .ui.inverted.vertical.segment {
+    padding-top: 16rem;
+    padding-bottom: 4rem;
+    height: 100vh;
+    background: transparent;
+  }
+
+  .slide .ui.text.container {
+    max-width: 70%;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .slick-prev.slick-arrow {
+    padding-left: 8rem;
+    padding-right: calc(8rem + 20px);
+    display: inline-block;
+    height: 100%;
+    z-index: 32;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.0001) 100%
+    );
+    background: transparent;
+  }
+
+  .slick-next.slick-arrow {
+    padding-left: 8rem;
+    padding-right: calc(8rem + 20px);
+    display: inline-block;
+    height: 100%;
+    z-index: 32;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.0001) 100%
+    );
+    background: transparent;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .slick-prev.slick-arrow {
+      padding-left: 4rem;
+      padding-right: calc(4rem + 20px);
+    }
+
+    .slick-next.slick-arrow {
+      padding-left: 4rem;
+      padding-right: calc(4rem + 20px);
+    }
+  }
+
+  .slick-dots {
+    bottom: 15px;
+  }
+
+  .slide .ui.segment h1 {
+    font-size: 3rem;
+    color: black;
+    z-index: 9999;
+  }
+
+  .slide .ui.segment p {
+    font-size: 1.5rem;
+    color: grey;
+    z-index: 9999;
+  }
+
+  .slide .ui.segment div {
+    z-index: 9999;
+  }
+
+  .slide .ui.segment img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".ui.toggle.button").click(function() {
+      $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+    });
+
+    $(".ui.dropdown").dropdown();
+
+    $(".slide").slick({
+      autoplay: true,
+      dots: true,
+      speed: 500
+    });
+  });
+</script>
+
+
+
+<div class="slide">
+
+  <div class="ui inverted vertical center aligned segment" ng-repeat="item in items">
+    <div class="ui active text container">
+      <img src="{{ item.image_url }}" alt="img" srcset="">
+      <div>
+        <h1 class="ui inverted header black"> {{ item.name }} </h1>
+        <p> {{ item.description }} </p>
+        <div class="ui huge primary button"> {{ item.button_text }} </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<br/>
+<br/>
+<br/>

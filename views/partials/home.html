@@ -1,0 +1,57 @@
+<div class="ui container">
+
+
+    <h1 class="ui horizontal divider header">
+        <i class="tag icon"></i>
+        Featured products
+    </h1>
+        
+
+
+
+    <div class="ui vertical segment" ng-repeat="item in items" ng-if="(item.index) % 3 == 1">
+      <div class="ui three column stackable center aligned grid container">
+
+        <div class="column" ng-if="items[$index]">
+          <img
+            class="ui centered medium image"
+            src="{{ items[$index].image_url }}"
+          />
+          <h1 class="ui header"> {{ items[$index].name }} </h1>
+          <p> {{ items[$index].description }} </p>
+          <div class="ui basic button">View details &raquo;</div>
+        </div>
+        
+        <div class="column" ng-if="items[$index + 1]">
+            <img
+              class="ui centered medium image"
+              src="{{ items[$index + 1].image_url }}"
+            />
+            <h1 class="ui header"> {{ items[$index + 1].name }} </h1>
+            <p> {{ items[$index + 1].description }} </p>
+            <div class="ui basic button">View details &raquo;</div>
+        </div>
+            
+        <div class="column" ng-if="items[$index + 2]">
+            <img
+              class="ui centered medium image"
+              src="{{ items[$index + 2].image_url }}"
+            />
+            <h1 class="ui header"> {{ items[$index + 2].name }} </h1>
+            <p> {{ items[$index + 2].description }} </p>
+            <div class="ui basic button">View details &raquo;</div>
+        </div>
+            
+
+
+      </div>
+    </div>
+
+</div>
+
+
+<br/>
+<br/>
+<br/>
+    
+      

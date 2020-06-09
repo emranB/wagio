@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>WAGIO Platform</title>
+
+    <base href="/">
+
+    <!-- jQuery -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+
+
+    <!-- Angular JS -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    
+
+    <!-- Angular JS Anim-In-Out -->
+    <link rel="stylesheet" href="/bower_components/angular-ui-router-anim-in-out/css/anim-in-out.css">
+    <script src="/bower_components/angular-ui-router-anim-in-out/anim-in-out.js"></script>
+    
+    <!-- BootStrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Semantic UI -->
+    <script src="/bower_components/semantic/dist/semantic.js"></script>
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css">
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    /> -->
+    
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Chivo|Quattrocento+Sans|Rajdhani|Teko|Electrolize|Arbutus+Slab|Halant|Rasa" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src="/js/custom.js"></script>
+
+    <!-- Include Controllers -->
+    <script src="/controllers/index.js"></script>
+    <script src="/controllers/HomeController.js"></script>
+    <script src="/controllers/CarouselController.js"></script>
+    <script src="/controllers/FooterController.js"></script>
+</head>
+
+
+
+<body>
+    
+    <div ng-app="app" class="outer-container container-fluid full-screen-width">
+        <!-- <div class="page-transition anim-in-out anim-fade anim-slide-below"  data-anim-speed="500" ui-view></div> -->
+        <nav ui-view="navbar"></nav>
+        <nav ui-view="carousel"></nav>
+        <div class="page-transition animation-target" ui-view> Index.html </div>
+        <div class="" ui-view="footer"></div>
+    </div>
+
+</body>
+
+</html>
+
