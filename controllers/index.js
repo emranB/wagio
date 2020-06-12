@@ -45,6 +45,46 @@ function (
                 }
             },
         })
+        .state("about", {
+            url: "/about",
+            views: {
+                "": {
+                    templateUrl: "views/partials/about.html",
+                    controller: "AboutController"
+                },
+                "navbar": {
+                    templateUrl: "views/partials/navbar.html"
+                },
+                // "carousel": {
+                //     templateUrl: "views/partials/carousel.html",
+                //     controller: "CarouselController"
+                // },
+                "footer": {
+                    templateUrl: "views/partials/footer.html",
+                    controller: "FooterController"
+                }
+            },
+        })
+        .state("contact", {
+            url: "/contact",
+            views: {
+                "": {
+                    templateUrl: "views/partials/contact.html",
+                    controller: "ContactController"
+                },
+                "navbar": {
+                    templateUrl: "views/partials/navbar.html"
+                },
+                // "carousel": {
+                //     templateUrl: "views/partials/carousel.html",
+                //     controller: "CarouselController"
+                // },
+                "footer": {
+                    templateUrl: "views/partials/footer.html",
+                    controller: "FooterController"
+                }
+            },
+        })
         ;
 
     $urlRouterProvider.otherwise(function ($injector, $location) {

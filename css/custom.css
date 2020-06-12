@@ -74,6 +74,9 @@ body {
 .five-fifth-screen-height-size {
     height: 80vh;
 }
+.full-height-size {
+    height: 100%;
+}
 
 .full-screen-width-size {
     width: 100vw;
@@ -144,18 +147,15 @@ body {
 }
 /********************************************************/
 
-/* .home-items-container {
-    margin-left: 2.5px;
+/**/
+.image-tint-1 {
+    filter: sepia(50%) saturate(150%) brightness(70%) hue-rotate(10deg);
 }
-.home-items {
-    margin-left: 2.5px;
-    text-align: center;
+
+/**/
+.page-header {
+    font-size: 25px;
 }
-.home-items img {
-
-} */
-
-
 
 /* [ui-view].ng-enter, [ui-view].ng-leave {
     position: absolute;
