@@ -33,22 +33,22 @@ body {
 
 /****************** Fonts *******************/
 .font-1 {
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Chivo', sans-serif !important;
 }
 .font-2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif !important;
 }
 .font-3 {
-    font-family: 'Teko', sans-serif;
+    font-family: 'Teko', sans-serif !important;
 }
 .font-4 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Archivo Black', sans-serif !important;
 }
 .font-5 {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani', sans-serif !important;
 }
 .font-6 {
-    font-family: 'Rasa', serif;
+    font-family: 'Rasa', serif !important;
 }
 /********************************************/
 
@@ -155,6 +155,44 @@ body {
 /**/
 .page-header {
     font-size: 25px;
+}
+
+/**/
+.back-to-top-btn {
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 10px solid lightblue;
+    background-color: gray;
+    color: lightblue;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+.back-to-top-btn:active, .back-to-top-btn:hover {
+    border: 10px solid gray;
+    background-color: lightblue;
+    color: gray;
+}
+
+/**/
+.full-width-search-box {
+    width: 85%;
+    border: 0;
+    border-bottom: 2px solid grey;
+    margin: auto;
+    color: grey;
+    font-size: 3em;
+}
+.full-width-search-box:active, .full-width-search-box:hover{
+    border: 0;
+    border-bottom: 2px solid black;
+    color: black;
 }
 
 /* [ui-view].ng-enter, [ui-view].ng-leave {

@@ -1,27 +1,49 @@
+<!-- <style>
+.home-cards {
+  border: 2px solid red;
+  padding: 0;
+  margin: 0;
+}  
+.home-cards .card {
+  border: 2px solid red !important;
+  width: 30% !important;
+}
+</style>
+
+
 <script>
 $(document).ready(function() {
   $('.special.cards .image').dimmer({
     on: 'hover'
   });
-});
+}); -->
 </script>
 
 
-<div class="ui container">
+<div class="ui container-fluid">
 
 
-  <h1 class="ui horizontal divider header"></h1>
+    <h1 class="ui horizontal divider header"></h1>
 
-    <h1 class="ui horizontal divider header">
-        <i class="tag icon"></i>
-        Featured products
+    <h1 class="ui horizontal divider font-3" style="font-size: 5vw;">
+        <!-- <i class="tag icon"></i> -->
+        Featured <br/> products
     </h1>
         
     <h1 class="ui horizontal divider header"></h1>
+    <h1 class="ui horizontal divider header"></h1>
+
+    <div class="ui fluid category search center aligned" style="margin: 0 auto; text-align: center;" ng-if="items.length > 0">
+      <input type="text" name="" id="searchCompanies" 
+            class="full-width-search-box" 
+            placeholder="Search from {{items.length}} registered companies.">
+    </div>
+
+    <h1 class="ui horizontal divider header"></h1>
+    <h1 class="ui horizontal divider header"></h1>
     
-    
-    <div class="ui special cards centered">
-      <div class="card" ng-repeat="item in items" ng-if="items[$index]" style="margin: 40px;">
+    <div class="ui special cards centered home-cards" ng-if="items.length > 0">
+      <div class="card" ng-repeat="item in items" ng-if="items[$index]">
         <div class="blurring dimmable image">
           <div class="ui dimmer">
             <div class="content">
@@ -30,10 +52,10 @@ $(document).ready(function() {
               </div>
             </div>
           </div>
-          <img src="{{ items[$index].image_url }}" style="width: 100%; height: auto;">
+          <img src="{{ items[$index].image_url }}">
         </div>
         <div class="content">
-          <a class="header" href=""> {{ items[$index].name }} </a>
+          <a class="header font-4" href=""> {{ items[$index].name }} </a>
           <div class="meta">
             <span class="date">Join date: Sep 2014</span>
           </div>
@@ -46,8 +68,18 @@ $(document).ready(function() {
         </div>
       </div>
     </div>
+
+    <div class="ui fluid category search center aligned" 
+        style="margin: 0 auto; text-align: center; color: black;" 
+        ng-if="items.length < 1">
+      <h3> No companies registered at the moment </h3>
+    </div>
     
 </div>
+
+<!-- <button class="back-to-top-btn">
+  <i class="up arrow icon"></i>
+</button> -->
 
 <br/>
 <br/>

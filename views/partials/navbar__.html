@@ -1,0 +1,106 @@
+<style>
+.ui.tablet.computer.only.padded.grid {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  top: 1rem;
+}
+
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+  display: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+  float: unset;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+  content: "\f0d7";
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  position: static;
+  width: 100%;
+  background-color: unset;
+  border: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+  background-color: rgb(47, 47, 47);
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  margin-top: 6px;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+</style>
+
+
+
+
+
+<div class="ui tablet computer only padded grid">
+  <div class="ui container">
+    <div class="ui inverted borderless huge menu">
+      <a class="header item" style="padding: 0;">
+        <img src="/images/logo2.png" alt="" style="background-size: cover; min-width: 50px; height: 100%;">        
+      </a>
+      <a class="item" ui-sref="home"> WAGIO</a> 
+      <a class="item" ui-sref="about">About</a>
+      <a class="item" ui-sref="contact">Contact</a>
+
+      <!-- <div class="ui dropdown item">
+        Other <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item"> Action </a> 
+          <a class="item"> Another action </a>
+          <a class="item"> Something else here </a>
+          <div class="ui divider"></div>
+          <div class="header">Navbar header</div>
+          <a class="item"> Seperated link </a>
+          <a class="item"> One more seperated link </a>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="ui mobile only grid">
+  <div class="ui top fixed inverted borderless huge menu">
+    <a class="header item">
+      <img src="/images/logo2.png" alt="">        
+    </a>
+    <div class="right menu">
+      <div class="item">
+        <button class="ui icon toggle basic inverted button">
+          <i class="content icon"></i>
+        </button>
+      </div>
+    </div>
+    <div class="ui vertical borderless inverted fluid menu">
+      <a class="item" ui-sref="home">Home</a> 
+      <a class="item" ui-sref="about">About</a>
+      <a class="item" ui-sref="contact">Contact</a>
+
+      <!-- <div class="ui dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item"> Action </a> <a class="item"> Another action </a>
+          <a class="item"> Something else here </a>
+          <div class="ui divider"></div>
+          <div class="header">Navbar header</div>
+          <a class="item"> Seperated link </a>
+          <a class="item"> One more seperated link </a>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>

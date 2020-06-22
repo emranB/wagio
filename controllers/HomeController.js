@@ -9,36 +9,36 @@
     ) {
         
         $scope.items = [
-            {
-                "index"       : 1,
-                "name"        : "Item 1",
-                "description" : "Item 1 description",
-                "image_url"   : "https://picsum.photos/300"
-            },     
-            {
-                "index"       : 2,
-                "name"        : "Item 2",
-                "description" : "Item 2 description",
-                "image_url"   : "https://picsum.photos/300"
-            },   
-            {
-                "index"       : 3,
-                "name"        : "Item 3",
-                "description" : "Item 3 description",
-                "image_url"   : "https://picsum.photos/300"
-            },   
-            {
-                "index"       : 4,
-                "name"        : "Item 4",
-                "description" : "Item 4 description",
-                "image_url"   : "https://picsum.photos/300"
-            },   
-            {
-                "index"       : 5,
-                "name"        : "Item 5",
-                "description" : "Item 5 description",
-                "image_url"   : "https://picsum.photos/300"
-            }
+            // {
+            //     "index"       : 1,
+            //     "name"        : "Item 1",
+            //     "description" : "Item 1 description",
+            //     "image_url"   : "https://picsum.photos/300"
+            // },     
+            // {
+            //     "index"       : 2,
+            //     "name"        : "Item 2",
+            //     "description" : "Item 2 description",
+            //     "image_url"   : "https://picsum.photos/300"
+            // },   
+            // {
+            //     "index"       : 3,
+            //     "name"        : "Item 3",
+            //     "description" : "Item 3 description",
+            //     "image_url"   : "https://picsum.photos/300"
+            // },   
+            // {
+            //     "index"       : 4,
+            //     "name"        : "Item 4",
+            //     "description" : "Item 4 description",
+            //     "image_url"   : "https://picsum.photos/300"
+            // },   
+            // {
+            //     "index"       : 5,
+            //     "name"        : "Item 5",
+            //     "description" : "Item 5 description",
+            //     "image_url"   : "https://picsum.photos/300"
+            // }
         ];
 
 

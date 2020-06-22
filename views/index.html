@@ -56,6 +56,38 @@
     <script src="/controllers/ContactController.js"></script>
     <script src="/controllers/CarouselController.js"></script>
     <script src="/controllers/FooterController.js"></script>
+
+    <style>
+      .home-cards {
+        /* border: 2px solid red; */
+        padding: 0;
+        margin: 0;
+      }  
+      .home-cards .card {
+        /* border: 2px solid red !important; */
+        /* padding: 20px !important; */
+        background: #e4e4e4 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+      }
+      .home-cards .card .header {
+        text-transform: uppercase;
+      }
+      .home-cards .card img {
+        /* border: 2px solid red !important; */
+        width: 100% !important;
+        background-size: cover;
+      }
+      </style>
+      
+      
+    <script>
+      $(document).ready(function() {
+        $('.special.cards .image').dimmer({
+          on: 'hover'
+        });
+      });
+    </script>
 </head>
 
 
@@ -65,7 +97,7 @@
     <div ng-app="app" class="outer-container full-screen-width">
         <!-- <div class="page-transition anim-in-out anim-fade anim-slide-below"  data-anim-speed="500" ui-view></div> -->
         <nav ui-view="navbar"></nav>
-        <nav ui-view="carousel"></nav>
+        <div ui-view="carousel"></div>
         <div class="page-transition anim-in-out anim-fade anim-slide-above" ui-view> Index.html </div>
         <div class="" ui-view="footer"></div>
     </div>

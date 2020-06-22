@@ -130,7 +130,7 @@
       <div>
         <h1 class="ui inverted white font-5"> {{ item.name }} </h1>
         <p class="white font-5"> {{ item.description }} </p>
-        <a href="#" class="blue customBtn_1" style="z-index: 9999;">
+        <a href="#" class="blue customBtn_1" style="z-index: 9999;" ng-if="item.button_text">
           <p><span class="bg"></span><span class="base"></span><span class="text"> {{ item.button_text }} </span></p>
         </a>
       </div>

@@ -1,106 +1,95 @@
 <style>
-.ui.tablet.computer.only.padded.grid {
-  position: absolute;
-  z-index: 8;
-  width: 100%;
-  top: 1rem;
-}
 
-.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
-  display: none;
-}
+  #nav_btn {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    border-radius: 50%;
+    background: transparent url("/images/logo2.png") no-repeat fixed center;
+    z-index: 9999;
+    display: block;
+  }
 
-.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
-  float: unset;
-}
+  #nav_btn:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -mox-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 9999;
+  }
+  #nav .close-btn {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 75px;
+    padding: 0;
+  }
+  #nav ul{
+    margin: 0 auto;
+    width: 75vw;
+    margin: 10vh auto;
+    list-style-type: none;
+    color: black;
+    font-size: 5em;
+    line-height: 1em;
+  }
 
-.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
-  content: "\f0d7";
-}
+  #nav img{
+    width: 100vw;
+  }
 
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-  position: static;
-  width: 100%;
-  background-color: unset;
-  border: none;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
-  background-color: rgb(47, 47, 47);
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-  margin-top: 6px;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
 </style>
 
+<script>
 
+  $(document).ready(function () {
 
+    $("#nav_btn").click(() => {
+      $("#nav").show();
+    });
 
+    $("#nav .close-btn").click(() => {
+      $("#nav").hide();
+    });
 
-<div class="ui tablet computer only padded grid">
-  <div class="ui container">
-    <div class="ui inverted borderless huge menu">
-      <a class="header item" style="padding: 0;">
-        <img src="/images/logo2.png" alt="" style="background-size: cover; min-width: 50px; height: 100%;">        
-      </a>
-      <a class="item" ui-sref="home"> WAGIO</a> 
-      <a class="item" ui-sref="about">About</a>
-      <a class="item" ui-sref="contact">Contact</a>
+    $("#nav ul li").click(() => {
+      $("#nav").hide();
+    });
 
-      <!-- <div class="ui dropdown item">
-        Other <i class="dropdown icon"></i>
-        <div class="menu">
-          <a class="item"> Action </a> 
-          <a class="item"> Another action </a>
-          <a class="item"> Something else here </a>
-          <div class="ui divider"></div>
-          <div class="header">Navbar header</div>
-          <a class="item"> Seperated link </a>
-          <a class="item"> One more seperated link </a>
-        </div>
-      </div> -->
+  });
 
-    </div>
-  </div>
-</div>
+</script>
 
+<img src="/images/logo.png" class="nav_btn" id="nav_btn" style="z-index: 9999;" />
 
+<nav id="nav">
+  <button class=" close-btn">
+    <i class="icon times circle outline"></i>
+  </button>
+  <ul class="font-3">
+    <li>  <a ui-sref="home">HOME</a>     </li>
+    <li>  <a ui-sref="about">ABOUT</a>    </li>
+    <li>  <a ui-sref="contact">CONTACT</a>  </li>
+  </ul>
 
-<div class="ui mobile only grid">
-  <div class="ui top fixed inverted borderless huge menu">
-    <a class="header item">
-      <img src="/images/logo2.png" alt="">        
-    </a>
-    <div class="right menu">
-      <div class="item">
-        <button class="ui icon toggle basic inverted button">
-          <i class="content icon"></i>
-        </button>
-      </div>
-    </div>
-    <div class="ui vertical borderless inverted fluid menu">
-      <a class="item" ui-sref="home">Home</a> 
-      <a class="item" ui-sref="about">About</a>
-      <a class="item" ui-sref="contact">Contact</a>
+  <div class="ui ivnerted horizontal divider"></div>
+  <div class="ui fitted divider"></div>
 
-      <!-- <div class="ui dropdown item">
-        Dropdown <i class="dropdown icon"></i>
-        <div class="menu">
-          <a class="item"> Action </a> <a class="item"> Another action </a>
-          <a class="item"> Something else here </a>
-          <div class="ui divider"></div>
-          <div class="header">Navbar header</div>
-          <a class="item"> Seperated link </a>
-          <a class="item"> One more seperated link </a>
-        </div>
-      </div> -->
+  <img src="/images/bg-10.jpg" class="image-tint-1" alt="" srcset="">
 
-    </div>
-  </div>
-</div>
+</nav>
