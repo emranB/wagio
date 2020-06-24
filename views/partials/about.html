@@ -1,6 +1,25 @@
 <style>
   .people-behind-scenes {
-    border: 2px solid red;
+    padding: 0;
+  }
+  .people-behind-scenes .person {
+    padding: 0;
+    background: black;
+    text-align: center;
+  }
+  .people-behind-scenes .person img{
+    height: 400px;
+    padding: 0;
+  }
+  .people-behind-scenes .person .content{
+    padding: 30px;
+  }
+  .people-behind-scenes .person .content a{
+    font-size: 2.5em;
+  }
+
+  .big-text {
+    font-size: 4em;
   }
 </style>
 
@@ -30,38 +49,38 @@ $(document).ready(function() {
 <div class="ui grid">
 
   <div class="ui vertical segment" style="background-color: #034f84; padding: 0;">
-    <div class="ui stackable grid">
-      <div class="ten wide column" style="padding: 5%;">
-        <h1 class="ui font-3">
+    <div class="ui two column grid">
+      <div class="ui column" style="padding: 5%;">
+        <!-- <h1 class="ui font-3">
           What is WAGIO?
-          <!-- <span class="sub">It'll blow your mind.</span> -->
-        </h1>
-        <p class="font-1">WAGIO is a software designed to help the flow of donations easier and without a hassle with exclusive customer rewards based upon their needs.
+        </h1> -->
+        <p class="big-text font-3">
+          WAGIO
+        </p> 
+        <p class="font-1">
+          is a platform designed to help the flow of donations easier and without a hassle with exclusive customer rewards based upon their needs.
           <br/>
           <br/>
           We donate to environmental start-up companies that involve in the areas of wildlife and green life, which would be our main priority and target. We want to try to be involved in every company possible trying to make a change in this environment. We will also target a lot of other foundations off course, but we DO NOT participate or consider partnering with medical researches or treatments as there are plenty of foundations and companies for that, which makes us unique.
         </p>
       </div>
-      <div class="six wide right aligned column" style="padding: 0;">
-        <img
-          class="ui image image-tint-1"
-          src="/images/bg-4.png"
-        />
+      <div class="ui right aligned column">
+        <img class="ui image image-tint-1" src="/images/bg-4.png" style=" background-size: cover;"/>
       </div>
     </div>
   </div>
 
   <div class="ui vertical segment" style="background-color: #c94c4c; padding: 0;">
-    <div class="ui stackable grid">
-      <div class="six wide column"style="padding: 0; min-height: 350px;">
-        <img
-          class="ui image image-tint-1 full-width-size full-height-size"
-          src="/images/bg-5.png"
-        />
+    <div class="ui two column grid">
+      <div class="ui left aligned column">
+        <img class="ui image image-tint-1" src="/images/bg-5.png" />
       </div>
-      <div class="ten wide column" style="padding: 5%; min-height: 350px;">
+      <div class="ui column" style="padding: 5%; min-height: 350px;">
+        <p class="big-text font-3">
+          DONATIONS
+        </p> 
         <p class="font-1">
-          Our donations can vary every month as we can see how many people are acting up to change the environment, but to change, these companies need help, and that is when WAGIO comes along. For our users, they will get always feel rewards and proven to where their money goes to as WAGIO provides weekly media to their users. This will ensure a smile to every user to see what they how helped with. 
+          can vary every month as we can see how many people are acting up to change the environment, but to change, these companies need help, and that is when WAGIO comes along. For our users, they will get always feel rewards and proven to where their money goes to as WAGIO provides weekly media to their users. This will ensure a smile to every user to see what they how helped with. 
           <br/>
           <br/>
           We would also like to get involved with special need children to include them for the environment to help especially with wildlife as it will provide more jobs for them and help them feel more involved with the world and that they have also been valuable since the start. 
@@ -74,25 +93,31 @@ $(document).ready(function() {
   </div>
   
   <div class="ui vertical segment" style="background-color: #ff7b25; padding: 0;">
-    <div class="ui stackable grid">
-      <div class="ten wide column" style="padding: 5%; min-height: 350px;">
-        <p class="font-1">
-          WAGIO also DOES NOT ACCEPT any account information from the user. WAGIO will not hold any sort of database of the users debit card numbers, credit cards etc. 
-          <br/>
-          WAGIO is basically a product purchase that comes in a bundle and will be easily purchased through our app with a monthly subscription fee of whatever the user desires but a maximum of $2 and a minimum of 25 cents. The purchase of the bundle is basically the same way done as buy a product online with interact or visa, which is one a time purchase but provided off course the monthly subscription. Our users will be highly involved with WAGIO almost weekly
-          <br/>
-          <br/>
-          WAGIO will have the license agreement uploaded with every donation start-up companies.
-          <br/>
-          <br/>
-          WAGIO will also contribute towards environmental friendly events year round.
+    <div class="ui two column grid">
+      <div class="ui column" style="padding: 5%; min-height: 350px;">
+        <p class="big-text font-3">
+          WAGIO
         </p>
+        <ul class="font-1" style="padding: 20px;">
+          <li>
+            does not accept any account information from the user. WAGIO will not hold any sort of database of the users debit card numbers, credit cards etc. 
+          </li>
+          <br>
+          <li>
+            is a product that comes in a bundle and will be easily purchased through our app with a monthly subscription fee of whatever the user desires but a maximum of $2 and a minimum of 25 cents. The purchase of the bundle is basically the same way done as buy a product online with interact or visa, which is one a time purchase but provided off course the monthly subscription. Our users will be highly involved with WAGIO almost weekly
+          </li>
+          <br>
+          <li>
+            will have the license agreement uploaded with every donation start-up companies.
+          </li>
+          <br>
+          <li>
+            will contribute towards environmental friendly events year round.
+          </li>
+        </ul>
       </div>
-      <div class="six wide right aligned column" style="padding: 0;">
-        <img
-          class="ui image image-tint-1"
-          src="/images/bg-6.png" style="height: 350px;"
-        />
+      <div class="ui column">
+        <img class="ui image image-tint-1" src="/images/bg-6.png" />
       </div>
     </div>
   </div>
@@ -102,42 +127,42 @@ $(document).ready(function() {
 
 <!-- About the makers -->
 <div style="background: black; width: 100vw; color: white;" class="ui grid">
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header" style="font-size: 10vh; color: white;">THE PEOPLE BEHIND THE SCENES</h1>
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header"></h1>
-  <h1 class="ui horizontal divider header"></h1>
+  <h1 class="ui horizontal divider header" style="font-size: 10vh; color: white; margin: 150px auto 50px auto;">
+    THE PEOPLE BEHIND THE SCENES
+    <div class="ui inverted fitted divider"></div>
+  </h1>
 </div>
+
 
 <div class="ui three column grid people-behind-scenes">
 
-  <div class="ui centered card item">
-    <div class="image">
+  <div class="ui column person">
+    <div class="image image-tint-2">
       <img src="/images/owners/hamza.jpg">
     </div>
     <div class="content">
-      <a class="header">Hamzeh Afani</a>
+      <a class="header font-1">HAMZEH AFANI</a>
+      <p class="font-2"> Business Management & Marketing </p>
     </div>
   </div>
 
-  <div class="ui centered card item">
-    <div class="image">
+  <div class="ui column person">
+    <div class="image image-tint-2">
       <img src="/images/owners/sulaiman.jpg">
     </div>
     <div class="content">
-      <a class="header">Sulaiman Boulos</a>
+      <a class="header font-1">SULAIMAN BOULOS</a>
+      <p class="font-2"> Business Management & Marketing </p>
     </div>
   </div>
 
-  <div class="ui centered card item">
-    <div class="image">
+  <div class="ui column person">
+    <div class="image image-tint-2">
       <img src="/images/owners/imran.jpg">
     </div>
     <div class="content">
-      <a class="header">Emran Billah</a>
+      <a class="header font-1">EMRAN BILLAH</a>
+      <p class="font-2"> Engineering and Technology </p>
     </div>
   </div>
 

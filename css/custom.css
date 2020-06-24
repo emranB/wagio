@@ -152,6 +152,10 @@ body {
     filter: sepia(50%) saturate(150%) brightness(70%) hue-rotate(10deg);
 }
 
+.image-tint-2 {
+    filter: sepia(23%) saturate(73%) hue-rotate(10deg) brightness(127%) contrast(103%);
+}
+
 /**/
 .page-header {
     font-size: 25px;
